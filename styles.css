@@ -9,7 +9,7 @@
 body {
   background-color: #15151e;
   color: #fff;
-  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -23,8 +23,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  width: 100%;
   background-color: #15151e;
+  cursor: pointer;
 }
 
 .ul-bar {
@@ -77,44 +78,671 @@ header {
   align-items: center;
   justify-content: center;
 }
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #000;
+}
 
 .container-fotos {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  background-color: #000000;
-  max-width: 100%;
+  gap: 3rem;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
 }
 .fotos1 {
-  width: 450px; /* Ocupa toda a largura do bloco pai */
-  height: 350px; /* Fixa uma altura padrão para alinhar todas */
+  width: 100%; /* Ocupa toda a largura do bloco pai */
+  height: 18rem; /* Fixa uma altura padrão para alinhar todas */
   object-fit: cover; /* Preenche o espaço cortando o excesso */
   border-radius: 10px;
+  gap: 2rem;
+  padding: 1px;
 }
+
 .fotos2 {
   width: 100%; /* Ocupa toda a largura do bloco pai */
-  height: 300px; /* Fixa uma altura padrão para alinhar todas */
-  object-fit: contain; /* Preenche o espaço cortando o excesso */
+  height: 285px; /* Fixa uma altura padrão para alinhar todas */
+  object-fit: cover; /* Preenche o espaço cortando o excesso */
   border-radius: 10px;
+  z-index: 0;
+}
+.container-principal {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .container-carros {
   display: grid;
-  grid-template-columns: repeat(2);
   align-items: center;
   justify-content: center;
-  gap: 16px; /* Espaçamento entre as fotos/elementos */
+  grid-template-columns: repeat(2, 3fr);
+  gap: 20px; /* Espaçamento entre as fotos/elementos */
   margin-bottom: 2rem;
-  height:;
+  width: 100%;
+  padding: 20px;
 }
+
 .carros {
   width: 100%; /* Ocupa a largura total do bloco onde estiver */
-  max-width: 650px; /* Não passa do tamanho original da foto */
+  max-width: 650px; /* Não passa dpilotoo tamanho original da foto */
   aspect-ratio: 1000 / 290; /* Calcula a altura proporcional automaticamente */
   object-fit: cover; /* Protege contra qualquer distorção */
   border-radius: 12px;
 }
+.caixa-carros {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.caixa {
+  margin-bottom: 10px;
+}
+.mer {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.piloto {
+  color: #d9d9d9;
+  padding: 10px;
+}
+.piloto span {
+  text-transform: uppercase;
+  font-size: 18px;
+  gap: 10px;
+  font-weight: bold;
+}
+.equipe {
+  display: grid;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.f1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.f2 {
+  font-size: 1.5rem;
+}
+/* Definições gerais do card do piloto */
+.driver-card-cadillac {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-cadillac {
+  width: 45px;
+  height: 45px;
+  background-color: #3bbf93; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-cadillac {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-cadillac {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-cadillac {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-cadillac {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+
+/*Aston Martin */
+/* Definições gerais do card do piloto */
+.driver-card-martin {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-martin {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-martin {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-martin {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-martin {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-martin {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Aston Martin */
+
+/*Audi */
+/* Definições gerais do card do piloto */
+.driver-card-audi {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-audi {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-audi {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-audi {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-audi {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-audi {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Audi */
+/*Williams */
+/* Definições gerais do card do piloto */
+.driver-card-Williams {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-Williams {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-Williams {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-Williams {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-Williams {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-Williams {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Williams */
+
+/*Haas */
+/* Definições gerais do card do piloto */
+.driver-card-Haas {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-Haas {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-Haas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-Haas {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-Haas {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-Haas {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Haas */
+
+/*Alpine */
+/* Definições gerais do card do piloto */
+.driver-card-Alpine {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-Alpine {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-Alpine {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-Alpine {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-Alpine {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-Alpine {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Alpine */
+
+/*Racing  */
+/* Definições gerais do card do piloto */
+.driver-card-Racing {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-Racing {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-Racing {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-Racing {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-Racing {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-Racing {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Racing  */
+
+/*Mercedes  */
+/* Definições gerais do card do piloto */
+.driver-card-Mercedes {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-Mercedes {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-Mercedes {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-Mercedes {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-Mercedes {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-Mercedes {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Mercedes  */
+
+/*Mclaren  */
+/* Definições gerais do card do piloto */
+.driver-card-Mclaren {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-Mclaren {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-Mclaren {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-Mclaren {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-Mclaren {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+  cursor: pointer;
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-Mclaren {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Mclaren  */
+
+/*Ferrari  */
+/* Definições gerais do card do piloto */
+.driver-card-Ferrari {
+  display: inline-flex; /* Faz o card se ajustar ao tamanho do conteúdo */
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Leve arredondada nos cantos do card (opcional) */
+  font-family: "Arial", sans-serif; /* Use a fonte de sua preferência */
+  gap: 12px; /* Espaço exato entre a imagem e o texto */
+  cursor: pointer;
+}
+
+/* Container do Avatar para fazer o fundo circular verde claro */
+.avatar-container-Ferrari {
+  width: 45px;
+  height: 45px;
+  background-color: #44ca9d; /* Verde mais claro de fundo da foto */
+  border-radius: 50%; /* Deixa o container redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Garante que a foto não saia do círculo */
+  cursor: pointer;
+}
+
+/* Estilização da imagem do piloto */
+.driver-avatar-Ferrari {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  cursor: pointer;
+}
+
+/* Container dos textos */
+.driver-info-Ferrari {
+  display: flex;
+  gap: 6px; /* Espaço entre o Nome e o Sobrenome */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilo do Primeiro Nome (Normal) */
+.first-name-Ferrari {
+  font-weight: 400;
+  opacity: 0.9; /* Um toque sutil de opacidade se quiser diferenciar mais */
+}
+
+/* Estilo do Sobrenome (Negrito) */
+.last-namecadillac-Ferrari {
+  font-weight: 800;
+  text-transform: uppercase; /* Garante que fique em caixa alta */
+  cursor: pointer;
+}
+/*Ferrari  */
 section.container {
   /*background-image: radial-gradient(#3101016e, #6d00d9,#00D4FF );*/
   background-color: rgba(73, 77, 92, 0.122);

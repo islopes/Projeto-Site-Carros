@@ -1,197 +1,466 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
 
 
-    <title>Page Formula 1</title>
-  </head>
+  <title>Page Formula 1</title>
+</head>
 
-  <body>
-    <header class="header">
+<body>
+  <header class="header">
 
-      <nav class="navebar">
-      <img class="img-logo" src="img/logo-f1.webp" />
-        <ul class="ul-bar">
-          <li id="agenda">agenda</li >
-          <li>Resultados</li>
-          <li>Notícias</li>
-          <li>Motoristas</li>
-          <li>Equipes</li>
-          <li>Fantasias e Jogos</li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navebar">
+      <img class="img-logo" src="img/logo-f1.webp" id="#header" />
+      <ul class="ul-bar">
+        <a id="#agenda">agenda</a>
+        <a id="equipes">Equipes</a>
+        <a>Notícias</a>
+        <a>Motoristas</a>
+        <a>Resultados</a>
+        <a>Fantasias e Jogos</a>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="inicio">
-      <div class="formula">
-        <img width: 100%;
-          class="img-inicio"
-          src="img/image-principal.jpg"
-          alt="image-principal"
-        />
-      </div>
-    </section>
+  <section class="inicio">
+    <div class="formula">
+      <img width: 100%; class="img-inicio" src="img/image-principal.jpg" alt="image-principal" />
+    </div>
+  </section>
 
-    <section class="container-fotos">
+  <section class="container-img" id="agenda">
+    <div class="container-fotos">
+
       <div>
-    <h2>Anterior</h2>
-    <img class="fotos1" src="img/monaco-calendario.webp" alt="">
+        <h2>Anterior</h2>
+        <img class="fotos1" src="img/monaco-calendario.webp" alt="">
       </div>
+
+
       <div>
-    <h2>próximo</h2>
-    <img class="fotos2" src="img/barcelona-catalunya.webp" alt="">
-      </div>
-            <div>
-    <h2>Por vir</h2>
-    <img class="fotos1" src="img/monaco-calendario.webp" alt="">
-      </div>
-      </section>
+        <h2 class="barca">próximo</h2>
+        <img class="fotos2" src="img/barcelona-catalunya.webp" alt="">
 
-      <section class="container-carros">
-        <div>
-          <h3>Ferrari</h3>
-          <div>
-            <img src="" alt="">
-            <a href="">Charles leclerc</a>
-             <a href="">Lewis hamilton</a>
-          </div>
-          <img class="carros" src="img/Carro-ferrari.png" alt="">
-
-        </div>  
-        
-        <div>
-            <h3>Ferrari</h3>
-         <div>
-            <img src="" alt="">
-            <a href="">Charles leclerc</a>
-             <a href="">Lewis hamilton</a>
-        </div>
-          <img class="carros" src="img/Carro-mclaren.png" alt="">
-
-        </div>
-        <div>
-            <h3>Ferrari</h3>
-         <div>
-            <img src="" alt="">
-            <a href="">Charles leclerc</a>
-             <a href="">Lewis hamilton</a>
-        </div>
-          <img class="carros" src="img/Carro-mercedes.png" alt="">
-        </div>
-                    <h3>Ferrari</h3>
-         <div>
-            <img src="" alt="">
-            <a href="">Charles leclerc</a>
-             <a href="">Lewis hamilton</a>
-        </div>
-          <img class="carros" src="img/Carro-redbull.png" alt="">
-        </div>
-      </section>
-
-    <section class="container">
-      <div class="list">
-        <div class="item active">
-          <div class="car-img">
-            <img src="./img/Ferrari-911 Turbo.png" all="imagem carro" />
-          </div>
-          <div class="content">
-            <p class="Car-information">(2016-2017)</p>
-            <h2>Lamborghini</h2>
-            <p class="description">
-              Em 1963 quando tudo começou, Ferrucio Lamborghini não imaginaria
-              que seus futuros carros se tornariam fenômenos da indústria
-              automotiva mundial. O Revuelto, sucessor do Aventador, nasce desse
-              jeito, como ícone do segmento. E nele, a assinatura da nova
-              estratégia da marca italiana focada na fase da digitalização e
-              eletrificação. Plano que segue até 2025 com mais uma novidade que
-              virá pela frente.
-            </p>
-            <button class="information">Saiba mais</button>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="car-img">
-            <img src="img/Ferrar-Ferrari.png" all="imagem carro" />
-          </div>
-          <div class="content">
-            <p class="Car-information">(2017-2018)</p>
-            <h2>Ferrari</h2>
-            <p class="description">
-              O cupê-conversível será o superesportivo de entrada da marca
-              italiana, para o lugar do já veterano California, lançado em 2009
-              e renovado pela última vez em 2015. E traz muitas evoluções, para
-              misturar conforto, precisão e desempenho brutal.
-            </p>
-            <button class="information">Saiba mais</button>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="car-img">
-            <img src="./img/Ferrari-Lamborghini.png" all="Lamborghini" />
-          </div>
-          <div class="content">
-            <p class="Car-information">2015</p>
-            <h2>911 turbo S</h2>
-            <p class="description">
-              Sua presença é sentida de longe. Sua emoção não tem limites. O 911
-              Turbo S é único em sua classe, graças ao seu desempenho de tirar o
-              fôlego e confiança incomparável. O sonho de um Porsche 911 –
-              levado ao limite absoluto.
-            </p>
-            <button class="information">Saiba mais</button>
-          </div>
-        </div>
-        <div class="item">
-          <div class="car-img">
-            <img
-              src="./img/car_no_bg_refined-removebg-preview.png"
-              all="Lamborghini"
-            />
-          </div>
-          <div class="content">
-            <p class="Car-information">(2018-2019)</p>
-            <h2>F1</h2>
-            <p class="description">
-              O modelo segue as regulamentações técnicas recentes da F1,
-              apresentando o sistema de proteção Halo sobre o cockpit, asas
-              dianteiras e traseiras complexas para gerar downforce, e
-              "barbatanas" de tubarão na cobertura do motor.
-            </p>
-            <button class="information">Saiba mais</button>
-          </div>
-        </div>
       </div>
 
-      <div class="arrows">
-        <button id="prev">
-          <img src="./img/seta.png" alt="seta esquerda" />
-        </button>
-        <button id="next">
-          <img src="./img/seta.png" alt="seta direita" />
-        </button>
+
+      <div>
+        <h2>Por vir</h2>
+        <img class="fotos1" src="img/australia-calendario.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="container-principal " id="equipes">
+    <div class="equipe">
+      <h1 class="f1">Equipes de f1 em 2026 </h1>
+      <p class="f2">Confira as equipes atuais da Fórmula 1 para a temporada de 2026</p>
+    </div>
+    <div class="container-carros">
+      <div class="caixa-carros">
+        <div class="caixa">
+          <h3 class="mer">Ferrari</h3>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Charles.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Charles</span>
+              <span class="last-name-Racing">Leclerc</span>
+            </div>
+          </div>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Lewis.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Lewis</span>
+              <span class="last-name-Racing">Hamilton</span>
+            </div>
+          </div>
+        </div>
+        <img class="carros" src="img/Carro-ferrari.png" alt="">
       </div>
 
-      <div class="indicators">
-        <div class="number">01</div>
-        <ul>
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-        </ul>
+      <div class="caixa-carros">
+        <div class="caixa">
+          <h3 class="mer">Mclaren</h3>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Lando.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Lando</span>
+              <span class="last-name-Racing">Norris</span>
+            </div>
+          </div>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Oscar.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Oscar</span>
+              <span class="last-name-Racing">Piadtri</span>
+            </div>
+          </div>
+        </div>
+        <img class="carros" src="img/Carro-mclaren.png" alt="">
       </div>
-    </section>
-    <script src="./scripts.js"></script>
-  </body>
+
+
+      <div class="caixa-carros">
+
+        <div class="caixa">
+          <h3 class="mer">Mercedes</h3>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-George.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">George</span>
+              <span class="last-name-Racing">Russell</span>
+            </div>
+          </div>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Kimi.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Kimi</span>
+              <span class="last-name-Racing">Antonelli</span>
+            </div>
+          </div>
+        </div>
+        <img class="carros" src="img/Carro-mercedes.png" alt="">
+      </div>
+
+      <div class="caixa-carros">
+
+        <div class="caixa">
+          <h3 class="mer">Red Bull Racing</h3>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Max.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Max</span>
+              <span class="last-name-Racing">Vestappen</span>
+            </div>
+          </div>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Isack.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Isaque</span>
+              <span class="last-name-Racing">Hadjar</span>
+            </div>
+          </div>
+        </div>
+        <img class="carros" src="img/Carro-redbull.png" alt="">
+      </div>
+      <div class="caixa-carros">
+
+        <div class="caixa">
+          <h3 class="mer">Alpine</h3>
+          <div class="driver-card-Alpine">
+            <div class="avatar-container-Alpine">
+              <img src="img/Foto-Pierre.png" alt="" class="driver-avatar-Alpine">
+            </div>
+            <div class="driver-info-Alpine">
+              <span class="first-name-Alpine">Pierre</span>
+              <span class="last-name-Alpine">Gasly</span>
+            </div>
+          </div>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Franco.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Franco</span>
+              <span class="last-name-Racing">Colapinto</span>
+            </div>
+          </div>
+
+        </div>
+        <img class="carros" src="img/Carro-alpino.png" alt="">
+      </div>
+
+      <div class="caixa-carros">
+
+        <div class="caixa">
+          <h3 class="mer">Racing Bulls</h3>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Liam.png" alt="" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Lian</span>
+              <span class="last-name-Racing">Lawson</span>
+            </div>
+          </div>
+          <div class="driver-card-Racing">
+            <div class="avatar-container-Racing">
+              <img src="img/Foto-Arvid.png" alt="Liam" class="driver-avatar-Racing">
+            </div>
+            <div class="driver-info-Racing">
+              <span class="first-name-Racing">Arvid</span>
+              <span class="last-name-Racing">Lindblad</span>
+            </div>
+          </div>
+
+        </div>
+        <img class="carros" src="img/Carro-racing.png" alt="">
+      </div>
+
+
+
+      <div class="caixa-carros">
+
+        <div class="caixa">
+          <h3 class="mer">Haas f1 team</h3>
+          <div class="driver-card-Haas">
+            <div class="avatar-container-Haas">
+              <img src="img/Foto-Esteban.png" alt="Carlos" class="driver-avatar-Haas">
+            </div>
+            <div class="driver-info-Haas">
+              <span class="first-name-Haas">Esteban</span>
+              <span class="last-name-Haas">Ocon</span>
+            </div>
+          </div>
+          <div class="driver-card-Haas">
+            <div class="avatar-container-Haas">
+              <img src="img/Foto-Oliver.png" alt="Carlos" class="driver-avatar-Haas">
+            </div>
+            <div class="driver-info-Haas">
+              <span class="first-name-Haas">Oliver</span>
+              <span class="last-name-Haas">Bearman</span>
+            </div>
+          </div>
+
+
+        </div>
+        <img class="carros" src="img/Carro-haas.png" alt="">
+      </div>
+
+      <div class="caixa-carros">
+
+        <div class="caixa">
+          <h3 class="mer">Williams</h3>
+          <div class="driver-card-Williams">
+            <div class="avatar-container-Williams">
+              <img src="img/Foto-Carlos.png" alt="Carlos" class="driver-avatar-Williams">
+            </div>
+            <div class="driver-info-Williams">
+              <span class="first-name-Williams">Carlos</span>
+              <span class="last-name-Williams">Sainz</span>
+            </div>
+          </div>
+          <div class="driver-card-Williams">
+            <div class="avatar-container-Williams">
+              <img src="img/Foto-Carlos.png" alt="Alexandre" class="driver-avatar-Williams">
+            </div>
+            <div class="driver-info-Williams">
+              <span class="first-name-Williams">Alexandre</span>
+              <span class="last-name-Williams">Albon</span>
+            </div>
+          </div>
+
+        </div>
+        <img class="carros" src="img/Carro-williams.png" alt="">
+      </div>
+
+      <div class="caixa-carros">
+
+        <div class="caixa">
+          <h3 class="mer">Audi</h3>
+          <div class="driver-card-audi">
+            <div class="avatar-container-audi">
+              <img src="img/Foto-Nico.png" alt="nico" class="driver-avatar-audi">
+            </div>
+            <div class="driver-info-audi">
+              <span class="first-name-audi">Nico</span>
+              <span class="last-name-audi">Hulkenberg</span>
+            </div>
+          </div>
+          <div class="driver-card-audi">
+            <div class="avatar-container-audi">
+              <img src="img/Foto-Gabriel.png" alt="nico" class="driver-avatar-audi">
+            </div>
+            <div class="driver-info-audi">
+              <span class="first-name-audi">Gabriel</span>
+              <span class="last-name-audi">Bortoleto</span>
+            </div>
+          </div>
+        </div>
+        <img class="carros" src="img/Carro-audi.png" alt="">
+      </div>
+
+      <div class="caixa-carros">
+
+        <div class="caixa">
+          <h3 class="mer">Aston Martin</h3>
+          <div class="driver-card-martin">
+            <div class="avatar-container-martin">
+              <img src="img/Foto-fernando-alonso.png" alt="Fernando Alonso" class="driver-avatar-martin">
+            </div>
+            <div class="driver-info-martin">
+              <span class="first-name-martin">Fernando</span>
+              <span class="last-name-martin">ALONSO</span>
+            </div>
+          </div>
+          <div class="driver-card-martin">
+            <div class="avatar-container-martin">
+              <img src="img/Foto-lance.png" alt="Lance" class="driver-avatar-martin">
+            </div>
+            <div class="driver-info-martin">
+              <span class="first-name-martin">Lance</span>
+              <span class="last-name-martin">stroll</span>
+            </div>
+          </div>
+        </div>
+        <img class="carros" src="img/Carro-aston-martin.png" alt="">
+      </div>
+
+
+      <div class="caixa-carros">
+        <div class="caixa">
+          <h3 class="mer">Cadillac</h3>
+          <div class="driver-card-cadillac">
+            <div class="avatar-container-cadillac">
+              <img src="img/Foto-sergio-perez.png" alt="Fernando Alonso" class="driver-avatar-cadillac">
+            </div>
+            <div class="driver-info-cadillac">
+              <span class="first-name-cadillac">Sergio</span>
+              <span class="last-name-cadillac">perez</span>
+            </div>
+          </div>
+          <div class="driver-card-cadillac">
+            <div class="avatar-container-cadillac">
+              <img src="img/Foto-valtteri.png" alt="Fernando Alonso" class="driver-avatar-cadillac">
+            </div>
+            <div class="driver-info-cadillac">
+              <span class="first-name-cadillac">Valtteri</span>
+              <span class="last-name-cadillac">botas</span>
+            </div>
+          </div>
+        </div>
+        <img class="carros" src="img/Carro-cadillac.png" alt="">
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+  <section class="container">
+    <div class="list">
+      <div class="item active">
+        <div class="car-img">
+          <img src="./img/Ferrari-911 Turbo.png" all="imagem carro" />
+        </div>
+        <div class="content">
+          <p class="Car-information">(2016-2017)</p>
+          <h2>Lamborghini</h2>
+          <p class="description">
+            Em 1963 quando tudo começou, Ferrucio Lamborghini não imaginaria
+            que seus futuros carros se tornariam fenômenos da indústria
+            automotiva mundial. O Revuelto, sucessor do Aventador, nasce desse
+            jeito, como ícone do segmento. E nele, a assinatura da nova
+            estratégia da marca italiana focada na fase da digitalização e
+            eletrificação. Plano que segue até 2025 com mais uma novidade que
+            virá pela frente.
+          </p>
+          <button class="information">Saiba mais</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="car-img">
+          <img src="img/Ferrar-Ferrari.png" all="imagem carro" />
+        </div>
+        <div class="content">
+          <p class="Car-information">(2017-2018)</p>
+          <h2>Ferrari</h2>
+          <p class="description">
+            O cupê-conversível será o superesportivo de entrada da marca
+            italiana, para o lugar do já veterano California, lançado em 2009
+            e renovado pela última vez em 2015. E traz muitas evoluções, para
+            misturar conforto, precisão e desempenho brutal.
+          </p>
+          <button class="information">Saiba mais</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="car-img">
+          <img src="./img/Ferrari-Lamborghini.png" all="Lamborghini" />
+        </div>
+        <div class="content">
+          <p class="Car-information">2015</p>
+          <h2>911 turbo S</h2>
+          <p class="description">
+            Sua presença é sentida de longe. Sua emoção não tem limites. O 911
+            Turbo S é único em sua classe, graças ao seu desempenho de tirar o
+            fôlego e confiança incomparável. O sonho de um Porsche 911 –
+            levado ao limite absoluto.
+          </p>
+          <button class="information">Saiba mais</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="car-img">
+          <img src="./img/car_no_bg_refined-removebg-preview.png" all="Lamborghini" />
+        </div>
+        <div class="content">
+          <p class="Car-information">(2018-2019)</p>
+          <h2>F1</h2>
+          <p class="description">
+            O modelo segue as regulamentações técnicas recentes da F1,
+            apresentando o sistema de proteção Halo sobre o cockpit, asas
+            dianteiras e traseiras complexas para gerar downforce, e
+            "barbatanas" de tubarão na cobertura do motor.
+          </p>
+          <button class="information">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrows">
+      <button id="prev">
+        <img src="./img/seta.png" alt="seta esquerda" />
+      </button>
+      <button id="next">
+        <img src="./img/seta.png" alt="seta direita" />
+      </button>
+    </div>
+
+    <div class="indicators">
+      <div class="number">01</div>
+      <ul>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+  <script src="./scripts.js"></script>
+</body>
+
 </html>
