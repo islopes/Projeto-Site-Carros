@@ -16,7 +16,8 @@ body {
 header {
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 1000;
+  overflow: hidden; /* Recorta a imagem quando ela crescer */
 }
 
 .navebar {
@@ -26,6 +27,15 @@ header {
   width: 100%;
   background-color: #15151e;
   cursor: pointer;
+
+  background-color: #15151e;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 12px,
+    transparent 12px,
+    transparent 24px
+  );
 }
 
 .ul-bar {
@@ -34,19 +44,56 @@ header {
   justify-content: center;
   padding: 15px;
   gap: 5rem;
+  font-size: large;
+  font-weight: 700;
 }
 .ul-bar :hover {
-  color: #92ff5f;
-  transition: 1s;
+  transform: scale(1.1); /* Aumenta a imagem em 15%. Use 1.2 para 20%, etc. */
 }
 .img-logo {
   width: 9rem;
   margin-right: 8rem;
 }
+.formula {
+  overflow: hidden; /* Recorta a imagem quando ela crescer */
+  border-radius: 20px;
+}
 .img-inicio {
   max-width: 100%;
   border-radius: 0px 0px 20px 20px;
   margin-top: 5rem;
+  transition: 0.5s ease;
+}
+
+.img-inicio:hover {
+  transform: scale(1.1);
+  transition-delay: 8ms;
+}
+.video-destaque {
+  width: 50%;
+  display: grid;
+  align-items: normal;
+}
+.video-dest {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+.video1 {
+  width: 25rem;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .inicio {
@@ -55,6 +102,7 @@ header {
   justify-content: center;
   max-width: 100%;
   width: 100%;
+  margin-bottom: 30px;
 }
 .Principal {
   max-width: 100%;
@@ -96,14 +144,26 @@ header {
   cursor: pointer;
   height: 40rem;
   z-index: auto;
+  overflow: hidden; /* Recorta a imagem quando ela crescer */
+}
+.hover {
+  overflow: hidden; /* Recorta a imagem quando ela crescer */
+  border-radius: 20px;
 }
 .fotos1 {
   width: 100%; /* Ocupa toda a largura do bloco pai */
   height: 18rem; /* Fixa uma altura padrão para alinhar todas */
   object-fit: cover; /* Preenche o espaço cortando o excesso */
-  border-radius: 10px;
-  gap: 2rem;
-  padding: 1px;
+  border-radius: 20px 20px 20px 20px;
+  gap: 1rem;
+
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  transition: 0.5s ease; /* Cria o efeito de movimento suave (0.5 segundos) */
+  z-index: 200;
+}
+.fotos1:hover {
+  transform: scale(1.1);
+  transition-delay: 8ms;
 }
 
 .fotos2 {
@@ -111,14 +171,26 @@ header {
   height: 285px; /* Fixa uma altura padrão para alinhar todas */
   object-fit: cover; /* Preenche o espaço cortando o excesso */
   border-radius: 10px;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  transition: 0.5s ease; /* Cria o efeito de movimento suave (0.5 segundos) */
+}
+.fotos2:hover {
+  transform: scale(1.1);
+  transition-delay: 8ms;
 }
 
 .paises {
-  position: relative;
-  z-index: 20;
+  position: absolute;
+  z-index: 500;
   display: grid;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+}
+.rodada {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
 }
 .container-principal {
   display: grid;
@@ -132,7 +204,7 @@ header {
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(2, 3fr);
-  gap: 20px; /* Espaçamento entre as fotos/elementos */
+  gap: 40px; /* Espaçamento entre as fotos/elementos */
   margin-bottom: 2rem;
   width: 100%;
   padding: 20px;
@@ -140,7 +212,7 @@ header {
 
 .carros {
   width: 100%; /* Ocupa a largura total do bloco onde estiver */
-  max-width: 650px; /* Não passa dpilotoo tamanho original da foto */
+  max-width: 900px; /* Não passa dpilotoo tamanho original da foto */
   aspect-ratio: 1000 / 290; /* Calcula a altura proporcional automaticamente */
   object-fit: cover; /* Protege contra qualquer distorção */
   border-radius: 12px;
@@ -1003,25 +1075,32 @@ section {
   height: 40rem;
   display: grid;
   align-items: center;
-  align-items: center;
   background-color: #000;
   border-radius: 1rem;
 }
 .resultados {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0rem;
-
-  margin-bottom: 10px;
-  padding: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10rem;
+  padding: 20px;
   color: #72728d;
   text-transform: uppercase;
   font-size: larger;
+  margin-left: 5rem;
+  border-bottom: 5px solid #ccc; /* Linha fina e cinza embaixo */
+  padding: 5px;
+  width: 90%; /* Faz a linha ser contínua de ponta a ponta */
+  margin-top: 2rem;
+}
+.resultados-corrida li {
+  border-bottom: 0.1px solid #ccc; /* Linha fina e cinza embaixo */
+  padding: 5px;
+  width: 100%; /* Faz a linha ser contínua de ponta a ponta */
 }
 .corrida {
   padding: 5rem;
-  margin-bottom: 20rem;
+  margin-bottom: auto;
 }
 .resultados-corrida {
   display: flex;
