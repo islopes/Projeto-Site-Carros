@@ -24,10 +24,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 5rem;
   width: 100%;
   background-color: #15151e;
   cursor: pointer;
-
   background-color: #15151e;
   background-image: repeating-linear-gradient(
     135deg,
@@ -43,9 +43,8 @@ header {
   align-items: center;
   justify-content: center;
   padding: 15px;
-  gap: 5rem;
+  gap: 6rem;
   font-size: large;
-  font-weight: 700;
 }
 .ul-bar :hover {
   transform: scale(1.1); /* Aumenta a imagem em 15%. Use 1.2 para 20%, etc. */
@@ -1069,33 +1068,40 @@ section {
   display: grid;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 }
 .container-result {
-  width: 100rem;
-  height: 40rem;
+  width: 100%;
+  height: 80%;
   display: grid;
   align-items: center;
   background-color: #000;
   border-radius: 1rem;
+  margin-bottom: 10rem;
+}
+.div-ul {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .resultados {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 10rem;
-  padding: 20px;
+  justify-content: center;
+  gap: 8rem;
   color: #72728d;
   text-transform: uppercase;
-  font-size: larger;
-  margin-left: 5rem;
-  border-bottom: 5px solid #ccc; /* Linha fina e cinza embaixo */
-  padding: 5px;
-  width: 90%; /* Faz a linha ser contínua de ponta a ponta */
-  margin-top: 2rem;
+  font-weight: 500;
+  border-bottom: 2px solid #ccc; /* Linha fina e cinza embaixo */
+  padding: 8px;
+
+  margin-bottom: 2rem;
+}
+.li {
 }
 .resultados-corrida li {
   border-bottom: 0.1px solid #ccc; /* Linha fina e cinza embaixo */
-  padding: 5px;
+  padding: 10px;
   width: 100%; /* Faz a linha ser contínua de ponta a ponta */
 }
 .corrida {
@@ -1104,8 +1110,8 @@ section {
 }
 .resultados-corrida {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 8px;
 }
 .container-princ {
