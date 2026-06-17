@@ -25,7 +25,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 5rem;
-  width: 100%;
+  max-width: 100%;
   background-color: #15151e;
   cursor: pointer;
   background-color: #15151e;
@@ -69,9 +69,9 @@ header {
   transition-delay: 8ms;
 }
 .video-destaque {
-  width: 50%;
   display: grid;
-  align-items: normal;
+  align-items: center;
+  justify-content: center;
 }
 .video-dest {
   text-transform: uppercase;
@@ -85,8 +85,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
   gap: 2rem;
   position: relative;
+  background-color: #15151e;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 12px,
+    transparent 12px,
+    transparent 24px
+  );
 }
 .video1 {
   width: 25rem;
@@ -249,7 +258,7 @@ header {
 }
 .f1 {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: "Titillium Web", sans-serif;
   font-weight: 800;
@@ -1158,4 +1167,41 @@ section {
   font-family: "Titillium Web", sans-serif;
   font-weight: 800;
   font-style: normal;
+}
+.cont-final {
+  background-color: #15151e;
+
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0px,
+
+    transparent 12px,
+    transparent 24px
+  );
+}
+.section-base {
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 1340px;
+  margin-top: 2rem;
+}
+.image-base {
+  display: grid;
+  align-items: center;
+  justify-self: flex-start;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.base {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2.5rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.base p {
+  color: #72728d;
 }
